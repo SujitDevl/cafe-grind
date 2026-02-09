@@ -15,11 +15,9 @@ function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-stone-600 max-w-xl">
-              <strong className="font-medium text-stone-900">
-                MM 🌿 (Matcha Mile)
-              </strong>{" "}
-              is a modern café experience focused on calm, quality brews, and
-              intentional moments.
+              <strong>MM 🌿 (Matcha Mile)</strong> is a modern café brand
+              focused on clean ingredients, matcha-based drinks,
+              and intentional coffee moments.
             </p>
 
             <div className="mt-10 flex gap-4">
@@ -39,10 +37,10 @@ function Hero() {
             </div>
           </div>
 
-          {/* Image */}
+          {/* HERO IMAGE – IMPRESSIVE */}
           <img
-            src="https://images.unsplash.com/photo-1541167760496-1628856ab772"
-            alt="Matcha coffee"
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80"
+            alt="Fresh brewed coffee"
             className="rounded-3xl shadow-lg object-cover"
           />
         </div>

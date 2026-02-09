@@ -6,23 +6,28 @@ function ImageFeature() {
     <section className="py-24 bg-white">
       <Container>
         <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Image */}
           <img
-            src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
-            alt="Cafe interior"
+            src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=80"
+            alt="Matcha latte"
             className="rounded-3xl object-cover"
           />
 
+          {/* Text */}
           <div>
-            <h2 className="text-3xl font-bold mb-6">Crafted With Intention</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              Crafted With Intention
+            </h2>
 
             <p className="text-stone-600 mb-4">
-              At Matcha Mile, every cup is brewed slowly, thoughtfully, and
-              sustainably — because coffee should feel good, not rushed.
+              At Matcha Mile, we focus on matcha-forward drinks,
+              slow brewing, and clean flavors that feel calm
+              and balanced.
             </p>
 
             <p className="text-stone-600">
-              We blend modern café culture with mindful living, creating a calm
-              space for focus and connection.
+              Every cup is designed to help you pause, breathe,
+              and enjoy the moment.
             </p>
           </div>
         </div>
