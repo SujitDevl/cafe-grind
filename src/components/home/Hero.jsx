@@ -1,25 +1,49 @@
 import Container from "../layout/Container";
+import { Link } from "react-router-dom";
 import React from "react";
 
 function Hero() {
   return (
-    <section
-      className="bg-cover bg-center py-32"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1350&q=80')",
-      }}
-    >
-      <div className="bg-black bg-opacity-50 py-20">
-        <Container>
-          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight text-center">
-            The Finest Coffee Experience
-          </h1>
-          <p className="mt-4 text-lg text-gray-200 text-center max-w-2xl mx-auto">
-            Handcrafted brews made with passion, flavor, and community vibes.
-          </p>
-        </Container>
-      </div>
+    <section className="bg-emerald-50 py-28">
+      <Container>
+        <div className="grid md:grid-cols-2 gap-14 items-center">
+          {/* Text */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-stone-900">
+              Slow Coffee for
+              <span className="text-emerald-700"> Mindful Living</span>
+            </h1>
+
+            <p className="mt-6 text-lg text-stone-600 max-w-xl">
+              Matcha Mile is a modern café experience focused on calm,
+              quality brews, and intentional moments.
+            </p>
+
+            <div className="mt-10 flex gap-4">
+              <Link
+                to="/menu"
+                className="bg-emerald-700 text-white px-7 py-3 rounded-lg hover:bg-emerald-600 transition"
+              >
+                Explore Menu
+              </Link>
+
+              <Link
+                to="/about"
+                className="border border-emerald-700 text-emerald-700 px-7 py-3 rounded-lg hover:bg-emerald-100 transition"
+              >
+                Our Story
+              </Link>
+            </div>
+          </div>
+
+          {/* Image */}
+          <img
+            src="https://images.unsplash.com/photo-1541167760496-1628856ab772"
+            alt="Matcha coffee"
+            className="rounded-3xl shadow-lg object-cover"
+          />
+        </div>
+      </Container>
     </section>
   );
 }

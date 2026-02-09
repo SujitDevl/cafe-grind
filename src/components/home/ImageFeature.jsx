@@ -1,29 +1,31 @@
-import React from "react";
 import Container from "../layout/Container";
+import React from "react";
 
 function ImageFeature() {
   return (
-    <section className="py-20">
+    <section className="py-24 bg-white">
       <Container>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           <img
-            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
-            alt="Fresh Coffee"
-            className="rounded-lg"
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+            alt="Cafe interior"
+            className="rounded-3xl object-cover"
           />
+
           <div>
-            <h2 className="text-3xl font-bold text-stone-900 mb-4">
-              Exceptional Taste, Every Time
+            <h2 className="text-3xl font-bold mb-6">
+              Crafted With Intention
             </h2>
 
             <p className="text-stone-600 mb-4">
-              Our beans are sourced from the best farms — roasted, brewed, and
-              poured to give you a coffee experience that feels warm, lively,
-              and unforgettable.
+              At Matcha Mile, every cup is brewed slowly, thoughtfully,
+              and sustainably — because coffee should feel good,
+              not rushed.
             </p>
+
             <p className="text-stone-600">
-              Whether you join us in-store or grab to go, each cup is crafted
-              for those who appreciate flavor and community.
+              We blend modern café culture with mindful living,
+              creating a calm space for focus and connection.
             </p>
           </div>
         </div>

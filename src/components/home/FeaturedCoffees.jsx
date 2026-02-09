@@ -4,26 +4,26 @@ import coffees from "../../data/coffees";
 import React from "react";
 
 function FeaturedCoffees() {
-  const featured = coffees.slice(0, 4);
+  const featured = coffees.slice(0, 3);
 
   return (
-    <section className="py-20 bg-stone-50">
+    <section className="py-24 bg-emerald-50">
       <Container>
-        <h2 className="text-3xl font-bold text-center mb-6">Popular Picks</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center">Signature Brews</h2>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <p className="text-stone-600 text-center mb-12 max-w-xl mx-auto">
+          Our most loved coffees, brewed to balance flavor and calm.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-3">
           {featured.map((coffee) => (
-            <div key={coffee.id}>
-              <CoffeeCard
-                name={coffee.name}
-                description={coffee.description}
-                price={coffee.price}
-                onAddToCart={() => {}}
-              />
-              <p className="text-sm text-center text-stone-500 mt-2">
-                {coffee.category.toUpperCase()}
-              </p>
-            </div>
+            <CoffeeCard
+              key={coffee.id}
+              name={coffee.name}
+              description={coffee.description}
+              price={coffee.price}
+              onAddToCart={() => {}}
+            />
           ))}
         </div>
       </Container>
