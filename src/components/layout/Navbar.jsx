@@ -13,7 +13,7 @@ function Navbar({ cartCount }) {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold text-amber-900">
-            Cafe Grind ☕
+            Cafe Grind
           </Link>
 
           {/* Desktop Nav */}

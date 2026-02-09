@@ -9,7 +9,7 @@ function Footer() {
         <div className="py-10 flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Left */}
           <div className="text-center md:text-left">
-            <h2 className="text-xl font-bold text-amber-900">Cafe Grind ☕</h2>
+            <h2 className="text-xl font-bold text-amber-900">Cafe Grind</h2>
             <p className="text-stone-600 text-sm mt-1">
               Fresh coffee, calm vibes.
             </p>
