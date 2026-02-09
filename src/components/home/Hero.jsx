@@ -1,32 +1,25 @@
-import React from "react";
 import Container from "../layout/Container";
+import React from "react";
 
 function Hero() {
   return (
-    <section className="py-20">
-      <Container>
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-stone-900 leading-tight">
-            Start Your Day with{" "}
-            <span className="text-amber-900">Perfect Coffee</span>
+    <section
+      className="bg-cover bg-center py-32"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1350&q=80')",
+      }}
+    >
+      <div className="bg-black bg-opacity-50 py-20">
+        <Container>
+          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight text-center">
+            The Finest Coffee Experience
           </h1>
-
-          <p className="mt-6 text-lg text-stone-600">
-            Cafe Grind brings you handcrafted coffee made from the finest beans,
-            brewed with passion and served with calm vibes.
+          <p className="mt-4 text-lg text-gray-200 text-center max-w-2xl mx-auto">
+            Handcrafted brews made with passion, flavor, and community vibes.
           </p>
-
-          <div className="mt-8 flex gap-4">
-            <button className="bg-amber-900 text-white px-6 py-3 rounded-md hover:bg-amber-800 transition">
-              View Menu
-            </button>
-
-            <button className="border border-stone-300 px-6 py-3 rounded-md text-stone-700 hover:bg-stone-100 transition">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   );
 }

@@ -1,16 +1,16 @@
-import React from "react";
 import Hero from "../components/home/Hero";
-import Features from "../components/home/Features";
+import ImageFeature from "../components/home/ImageFeature";
 import FeaturedCoffees from "../components/home/FeaturedCoffees";
-import CTA from "../components/home/CTA";
+import SubscribeSection from "../components/home/SubscribeSection";
+import React from "react";
 
 function Home() {
   return (
     <>
       <Hero />
-      <Features />
+      <ImageFeature />
       <FeaturedCoffees />
-      <CTA />
+      <SubscribeSection />
     </>
   );
 }
